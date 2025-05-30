@@ -199,7 +199,7 @@ function BmiTracker() {
   return (
     <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "85vh" }}>
       <form style={cardStyle} onSubmit={handleCalculate} autoComplete="off" spellCheck="false">
-        <div style={headerStyle}>BMI Tracker</div>
+        <div style={headerStyle}>BMI weight calculator</div>
         <div style={inputContainerStyle}>
           <div>
             <label htmlFor="height" style={labelStyle}>Height (cm):</label>
