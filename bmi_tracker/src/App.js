@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
+import BMITracker from './BMITracker';
 
+// Main App wraps the BMITracker container in the overall app shell
 function App() {
   return (
     <div className="app">
@@ -10,24 +12,13 @@ function App() {
             <div className="logo">
               <span className="logo-symbol">*</span> KAVIA AI
             </div>
-            <button className="btn">Template Button</button>
+            <button className="btn" tabIndex={-1} style={{ pointerEvents: "none", opacity: 0.62 }}>Template Button</button>
           </div>
         </div>
       </nav>
-
       <main>
-        <div className="container">
-          <div className="hero">
-            <div className="subtitle">AI Workflow Manager Template</div>
-            
-            <h1 className="title">bmi_tracker</h1>
-            
-            <div className="description">
-              Start building your application.
-            </div>
-            
-            <button className="btn btn-large">Button</button>
-          </div>
+        <div className="container" style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <BMITracker />
         </div>
       </main>
     </div>
